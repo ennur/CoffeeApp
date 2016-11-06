@@ -1,6 +1,7 @@
 package com.guido.coffeeapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
@@ -89,8 +90,10 @@ public class MainActivity extends ActionBarActivity {
     }
 
     private void displayMessage(String message) {
-        TextView orderSummaryTextView = (TextView) findViewById(R.id.order_summary_text_view);
-        orderSummaryTextView.setText(message);
+        Intent intent = new Intent(this, MessageActivity.class);
+        intent.putExtra("message", message);
+        startActivity(intent);
+
     }
 
     private String createOrderSummary(int total) {
