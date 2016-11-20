@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.guido.coffeeapp.justjava">
+          package="com.guido.coffeeapp.justjava">
 
     <application
         android:allowBackup="true"
@@ -10,20 +10,25 @@
         android:theme="@style/AppTheme">
         <activity android:name="com.guido.coffeeapp.MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
             <intent-filter>
-                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT"/>
 
-                <data android:mimeType="text/*" />
+                <data android:mimeType="text/*"/>
             </intent-filter>
+        </activity>
+        <activity android:name="com.guido.coffeeapp.MessageActivity"/>
+        <activity android:name="com.guido.coffeeapp.TryActivity">
+        </activity>
+        <activity android:name="com.guido.coffeeapp.SecondActivity">
+
 
         </activity>
-        <activity android:name="com.guido.coffeeapp.MessageActivity"></activity>
     </application>
 
 </manifest>

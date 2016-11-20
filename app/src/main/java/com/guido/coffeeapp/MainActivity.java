@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.guido.coffeeapp.justjava.R;
 
+
 public class MainActivity extends ActionBarActivity {
     int quantity = 2;
 
@@ -97,7 +98,8 @@ public class MainActivity extends ActionBarActivity {
     }
 
     private String createOrderSummary(int total) {
-        String priceMessage ="Name: "+custName() + "\nAdd Whipped Cream? "
+        String priceMessage ="Name: "+custName() +
+                "\nAdd Whipped Cream? "
                 + hasWhippedCream() + "\nAdd Chocolate? "
                 + hasChocolate() + "\nQuantity: " + quantity
                 + "\nTotal: $" + (total);
